@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // 데이터베이스 초기화
-const db = new sqlite3.Database('./backend/database.sqlite', (err) => {
+const db = new sqlite3.Database('./database.sqlite', (err) => {
   if (err) {
     console.error('데이터베이스 연결 오류:', err.message);
   } else {
